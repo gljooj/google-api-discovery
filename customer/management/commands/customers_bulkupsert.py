@@ -1,5 +1,4 @@
 import csv
-import os
 from django.core.management import BaseCommand
 
 from customer.infrastructure.google_maps.google_maps_client import GoogleMapsClient
