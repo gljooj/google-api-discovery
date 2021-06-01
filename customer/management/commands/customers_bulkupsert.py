@@ -5,8 +5,6 @@ from django.core.management import BaseCommand
 from customer.infrastructure.google_maps.google_maps_client import GoogleMapsClient
 from customer.models import Customer
 
-here = os.path.abspath(os.path.dirname(__file__))
-
 
 class Command(BaseCommand):
     help = 'Load customers csv file into the database'
