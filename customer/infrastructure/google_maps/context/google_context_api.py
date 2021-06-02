@@ -1,6 +1,9 @@
 from customer.context.context_api import ContextAPI
 import requests
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 class GoogleContextAPI(ContextAPI):
