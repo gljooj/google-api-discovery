@@ -2,10 +2,11 @@ from customer.context.context_api import ContextAPI
 import requests
 import os
 
+
 class GoogleContextAPI(ContextAPI):
     def __init__(self):
         self.base_url = 'https://maps.googleapis.com/maps/api/geocode/json?'
-        self.token = os.getenv("token")
+        self.token = os.getenv("TOKEN")
         self.params = {'key': self.authentication()}
 
     def authentication(self) -> str:
