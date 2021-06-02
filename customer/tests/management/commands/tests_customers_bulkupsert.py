@@ -9,6 +9,9 @@ from customer.models import Customer
 import json
 import os
 import responses
+from dotenv import load_dotenv
+
+load_dotenv()
 
 here = os.path.abspath(os.path.dirname(__file__))
 
@@ -28,6 +31,7 @@ class TestsCustomersBulkUpsert(TestCase):
         )
 
     def active_responses(self):
+        token = os.getenv('TOKEN')
         path = {'path': os.path.join(here, '../../infrastructure/google_maps/customers.csv')}
         customers = Command.customers(kwargs=path)
         id_locations = self.id_location(customers)
@@ -40,7 +44,7 @@ class TestsCustomersBulkUpsert(TestCase):
 
         for location in id_locations:
             responses.add(responses.GET,
-                          f'https://maps.googleapis.com/maps/api/geocode/json?address={location["city"]}',
+                          f'https://maps.googleapis.com/maps/api/geocode/json?key={token}&address={location["city"]}',
                           json=response[n], status=200)
             n += 1
         return responses
