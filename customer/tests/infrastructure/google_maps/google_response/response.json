@@ -1,0 +1,184 @@
+[{
+   "results":[
+      {
+         "address_components":[
+            {
+               "long_name":"Warner",
+               "short_name":"Warner",
+               "types":[
+                  "locality",
+                  "political"
+               ]
+            },
+            {
+               "long_name":"Henniker",
+               "short_name":"Henniker",
+               "types":[
+                  "administrative_area_level_3",
+                  "political"
+               ]
+            },
+            {
+               "long_name":"Merrimack County",
+               "short_name":"Merrimack County",
+               "types":[
+                  "administrative_area_level_2",
+                  "political"
+               ]
+            },
+            {
+               "long_name":"New Hampshire",
+               "short_name":"NH",
+               "types":[
+                  "administrative_area_level_1",
+                  "political"
+               ]
+            },
+            {
+               "long_name":"United States",
+               "short_name":"US",
+               "types":[
+                  "country",
+                  "political"
+               ]
+            }
+         ],
+         "formatted_address":"Warner, NH, USA",
+         "geometry":{
+            "bounds":{
+               "northeast":{
+                  "lat":43.395675,
+                  "lng":-71.7257681
+               },
+               "southwest":{
+                  "lat":43.2134189,
+                  "lng":-71.924195
+               }
+            },
+            "location":{
+               "lat":43.2556568,
+               "lng":-71.8334145
+            },
+            "location_type":"APPROXIMATE",
+            "viewport":{
+               "northeast":{
+                  "lat":43.395675,
+                  "lng":-71.7257681
+               },
+               "southwest":{
+                  "lat":43.2134189,
+                  "lng":-71.924195
+               }
+            }
+         },
+         "place_id":"ChIJG-pLx8Qb4okRLtVjF2WF4e0",
+         "types":[
+            "locality",
+            "political"
+         ]
+      }
+   ],
+   "status":"OK"
+},{
+    "results": [
+        {
+            "address_components": [
+                {
+                    "long_name": "1001",
+                    "short_name": "1001",
+                    "types": [
+                        "street_number"
+                    ]
+                },
+                {
+                    "long_name": "East 5th Street",
+                    "short_name": "E 5th St",
+                    "types": [
+                        "route"
+                    ]
+                },
+                {
+                    "long_name": "Natchitoches",
+                    "short_name": "Natchitoches",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Natchitoches Parish",
+                    "short_name": "Natchitoches Parish",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Louisiana",
+                    "short_name": "LA",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "United States",
+                    "short_name": "US",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "71457",
+                    "short_name": "71457",
+                    "types": [
+                        "postal_code"
+                    ]
+                },
+                {
+                    "long_name": "5203",
+                    "short_name": "5203",
+                    "types": [
+                        "postal_code_suffix"
+                    ]
+                }
+            ],
+            "formatted_address": "1001 E 5th St, Natchitoches, LA 71457, USA",
+            "geometry": {
+                "location": {
+                    "lat": 31.7670888,
+                    "lng": -93.07728499999999
+                },
+                "location_type": "ROOFTOP",
+                "viewport": {
+                    "northeast": {
+                        "lat": 31.7684377802915,
+                        "lng": -93.07593601970848
+                    },
+                    "southwest": {
+                        "lat": 31.7657398197085,
+                        "lng": -93.0786339802915
+                    }
+                }
+            },
+            "place_id": "ChIJ1d1F-0l9MIYRChbtizixItY",
+            "plus_code": {
+                "compound_code": "QW8F+R3 Natchitoches, LA, USA",
+                "global_code": "8638QW8F+R3"
+            },
+            "types": [
+                "establishment",
+                "point_of_interest",
+                "primary_school",
+                "school"
+            ]
+        }
+    ],
+    "status": "OK"
+},
+   {
+    "results": [],
+    "status": "ZERO_RESULTS"
+}
+]
