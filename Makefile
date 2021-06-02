@@ -7,6 +7,9 @@ install:
 run:
 	docker-compose up -d
 
+user:
+	docker-compose exec web bash -c 'python manage.py createsuperuser'
+
 extract:
 	docker-compose exec web bash -c 'python manage.py customers_bulkupsert --path customers.csv'
 
