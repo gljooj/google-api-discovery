@@ -5,7 +5,7 @@ install:
 	docker-compose build
 
 run:
-	docker-compose up -d
+	docker-compose up &
 
 user:
 	docker-compose exec web bash -c 'python manage.py createsuperuser'
