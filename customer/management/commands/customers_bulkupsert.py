@@ -36,6 +36,7 @@ class Command(BaseCommand):
         return items
 
     def handle(self, *args, **kwargs):
+        print('Registering customers')
         customers = self.customers(kwargs)
         id_locations = self.id_location(customers)
         locations = self.get_locations_(id_locations)
@@ -52,6 +53,9 @@ class Command(BaseCommand):
                 latitude=get_position.latitude,
                 longitude=get_position.longitude
             )
+            print(f'Customer id: {customer["id"]} created')
+
+        print("All the customers was registered")
 
     @staticmethod
     def id_location(customer):

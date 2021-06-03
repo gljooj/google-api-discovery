@@ -1,7 +1,10 @@
 from customer.context.context_api import ContextAPI
 import requests
 import os
+import urllib3
 from dotenv import load_dotenv
+
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 load_dotenv()
 
