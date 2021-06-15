@@ -1,5 +1,5 @@
 """
-ASGI config for oowlish project.
+ASGI config for google-api-discovery project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'oowlish.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'google-api-discovery.settings')
 
 application = get_asgi_application()
