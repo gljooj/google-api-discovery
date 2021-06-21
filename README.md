@@ -3,7 +3,7 @@
 </h1>
 <p align="center">🚀 Checking data location by customer city 🚀</p>
 
-<h2>Important: PUT YOUR TOKEN GOOGLECLOUD IN .env </h2>
+<h2>Important: FIRST OF ALL, PUT YOUR TOKEN GOOGLECLOUD IN .env </h2>
 
 <h2>Preparing The environment:</h2>
 Configuring environment
@@ -29,7 +29,7 @@ Access the http://localhost:8000/admin/customer/customer/ have no customers
  
     make extract
 
-It taking about 4 minutes to extract all the customers, because I don't found a way to get a list in Api.<br>
+It taking some seconds to extract all the customers, because I don't found a way to get a list in Api.<br>
 Then I take the list, make a get one by one and build a dict.<br>
 If you want to run another csv write 'docker-compose exec web bash -c 'python manage.py customers_bulkupsert --path'
 
