@@ -33,7 +33,7 @@ It taking about 4 minutes to extract all the customers, because I don't found a 
 Then I take the list, make a get one by one and build a dict.<br>
 If you want to run another csv write 'docker-compose exec web bash -c 'python manage.py customers_bulkupsert --path'
 
-<h1>Api:</h1>
+<h1>Api</h1>
 <h2>Documentation: http://127.0.0.1:8000/documentation/ </h2>
 Endpoints:
 Get all customers (you can see in the browser too): http://127.0.0.1:8000/customers/
