@@ -3,9 +3,9 @@
 </h1>
 <p align="center">🚀 Checking data location by customer city 🚀</p>
 
-###Important: PUT YOUR TOKEN GOOGLECLOUD IN .env
+<h2>Important: PUT YOUR TOKEN GOOGLECLOUD IN .env </h2>
 
-##Preparing The environment:
+<h2>Preparing The environment:</h2>
 Configuring environment
 
     pip install virtualenv
@@ -16,7 +16,7 @@ Configuring environment
     
     pip install -r requirements.txt
 
-##How To Run:
+<h2>How To Run:</h2>
 
     1 - make install
     2 - make run
@@ -32,13 +32,14 @@ Access the http://localhost:8000/admin/customer/customer/ have no customers
 It taking about 4 minutes to extract all the customers, because I don't found a way to get a list in Api.<br>
 Then I take the list, make a get one by one and build a dict.<br>
 If you want to run another csv write 'docker-compose exec web bash -c 'python manage.py customers_bulkupsert --path'
-##Api:
-###Documentation: http://127.0.0.1:8000/documentation/
+
+<h1>Api</h1>:
+<h2>Documentation: http://127.0.0.1:8000/documentation/ </h2>
 Endpoints:
 Get all customers (you can see in the browser too): http://127.0.0.1:8000/customers/
 
 Get By id: http://127.0.0.1:8000/customers/{id}
-###Tests:
+<h2>Tests</h2>:
 
 In 'customer/tests/management/command/tests_customer_bulkupsert.py' we have the tests to run the tests just run command
 
