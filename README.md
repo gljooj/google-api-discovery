@@ -3,6 +3,8 @@
 </h1>
 <p align="center">🚀 Checking data location by customer city 🚀</p>
 
+###Important: PUT YOUR TOKEN GOOGLECLOUD IN .env
+
 ##Preparing The environment:
 Configuring environment
 
@@ -13,7 +15,6 @@ Configuring environment
     source .venv/bin/activate
     
     pip install -r requirements.txt
-I put my Apikey in .env file, but if you prefer use your own ApyKey just change in .env
 
 ##How To Run:
 
@@ -27,6 +28,7 @@ Access the http://localhost:8000/admin/customer/customer/ have no customers
  now, to import it, run the command: 
  
     make extract
+
 It taking about 4 minutes to extract all the customers, because I don't found a way to get a list in Api.<br>
 Then I take the list, make a get one by one and build a dict.<br>
 If you want to run another csv write 'docker-compose exec web bash -c 'python manage.py customers_bulkupsert --path'
