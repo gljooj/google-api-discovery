@@ -17,7 +17,8 @@ Configuring environment
     pip install -r requirements.txt
 
 <h2>How To Run:</h2>
-
+    If you don't have the make configured in your local, 
+    you can open the file make and execute the commands in your terminal
     1 - make install
     2 - make run
     3 - make user (to creating a super user)
